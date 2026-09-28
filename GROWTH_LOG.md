@@ -6,6 +6,13 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-09-28 - Adsterra fixed six-unit ads enabled
+
+- Task: Replace empty Adsterra unit placeholders with real code from the Adsterra platform.
+- Files changed: `src/data/ads.ts` only.
+- URLs affected: None.
+- Ad baseline: Native Banner, Banner 728x90, Banner 468x60, Banner 320x50, Banner 160x600, and Smartlink are now populated with real code; fixed ad positions in the page shell, after the second content module, in the desktop right rail, and in the footer remain unchanged.
+
 ### 2026-08-12 - Static discovery and review freshness baseline added
 
 - Task: Add locale-aware static search, automatic recent updates, visible review dates, and browser metadata/security defaults to the shared template.
