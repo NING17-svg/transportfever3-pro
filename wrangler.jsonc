@@ -11,5 +11,6 @@
     "NEXT_PUBLIC_SITE_URL": "https://transportfever3.pro",
     "NEXT_PUBLIC_GA_MEASUREMENT_ID": "G-17WJG6NFLG",
     "NEXT_PUBLIC_BING_SITE_AUTH_CODE": ""
-  }
+  },
+  "placement": { "mode": "smart" }
 }
