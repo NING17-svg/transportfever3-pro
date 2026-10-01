@@ -1,5 +1,6 @@
 import { AdSlot } from "@/components/ads/AdSlot";
 import { FAQBlock } from "@/components/content/FAQBlock";
+import { renderInlineMarkdown } from "@/components/content/markdown";
 import { KeyFacts } from "@/components/content/KeyFacts";
 import { ModuleRenderer } from "@/components/content/ModuleRenderer";
 import { RelatedLinks } from "@/components/content/RelatedLinks";
@@ -29,7 +30,7 @@ export function HubPage({ page }: { page: PageContent }) {
       {faqs.length ? <JsonLd data={faqSchema(faqs)} /> : null}
       <PageHero page={page} />
       <section className="hub-summary">
-        <p className="quick-answer">{page.quickAnswer}</p>
+        <p className="quick-answer">{renderInlineMarkdown(page.quickAnswer)}</p>
         <KeyFacts facts={page.keyFacts} />
       </section>
       <AdSlot placement="responsive-banner" />

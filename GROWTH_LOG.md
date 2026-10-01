@@ -6,6 +6,16 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-10-01 - Page bodies render as structure instead of one flat paragraph
+
+- Task: Fix the fourteen pages whose Quick Answer was a 500-character slice of the article, and render authored Markdown as real structure.
+- Files changed: `src/components/content/markdown.tsx` (new), `ModuleRenderer.tsx`, `StatusCallout.tsx`, `PageHero.tsx`, `ContentPage.tsx`, `HomePage.tsx`, `HubPage.tsx`, `WorkspacePage.tsx`, `src/styles/modules.css`, and the fourteen page data files under `src/data/pages/`.
+- Content changed: `quickAnswer` now holds the opening section of the page in full instead of a mid-sentence truncation. The single `quick-answer` module that held the whole article is replaced by one prose module per section, with sentence-case headings; the section text itself is unchanged.
+- Rendering changed: A prose module body is split into headings, paragraphs, lists and tables instead of being printed as one `<p>`, so authored `##` markers, bullet lists and links no longer show as literal text. `hero.subtitle` and `quickAnswer` render inline Markdown only.
+- Fixed: Every `sources` callout printed a mangled date (`checked 2026): 09-28`); it now reads `checked 2026-09-28` and lists each source as its own bullet. Every `fact-boundaries` callout repeated its own title as the first line of its body; that line is removed so the bullets sit under the callout heading. The `Console Release Status` section on `/platforms` had a heading and no text, and is now carried by the two platform sections beneath it.
+- URLs affected: No URL, route, page type, keyword, CTA, title, H1, canonical, schema, or internal-link role changed, so `CONTENT_INDEX.md` needs no update.
+- Verification: `npm run verify` (typecheck, lint, template, content, IndexNow, static build, rendered SEO for 17 pages / 17 sitemap URLs / 17 manifest routes) plus a sweep of the 19 built HTML files for raw heading markers, unrendered links, broken source dates, and long unsegmented prose.
+
 ### 2026-09-28 - Adsterra fixed six-unit ads enabled
 
 - Task: Replace empty Adsterra unit placeholders with real code from the Adsterra platform.

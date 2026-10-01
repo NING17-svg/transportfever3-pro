@@ -30,7 +30,7 @@ export const platformsPage: PageContent = {
       }
     ]
   },
-  "quickAnswer": "At a glance\n\nTransport Fever 3 platforms confirmed so far are limited to Steam PC for AppID 3493540, where developer and publisher Urban Games lists the title for an Early Access release on Sep 29, 2026. Console release dates for PlayStation 5 and Xbox Series X|S are Not announced as of 2026-09-28. A Mac version is also Not announced as of 2026-09-28; check the official Steam store page for updates.\n\nTransport Fever 3 Platforms on Steam\n\nSteam PC is the only confirmed platform for Transport Feve",
+  "quickAnswer": "Transport Fever 3 platforms confirmed so far are limited to Steam PC for AppID 3493540, where developer and publisher Urban Games lists the title for an Early Access release on Sep 29, 2026. Console release dates for PlayStation 5 and Xbox Series X|S are Not announced as of 2026-09-28. A Mac version is also Not announced as of 2026-09-28; check the official Steam store page for updates.",
   "keyFacts": [
     {
       "label": "Game",
@@ -50,18 +50,48 @@ export const platformsPage: PageContent = {
     }
   ],
   "modules": [
-    {
-      "id": "quick-answer",
-      "type": "prose",
-      "heading": "At a glance",
-      "body": "At a glance\n\nTransport Fever 3 platforms confirmed so far are limited to Steam PC for AppID 3493540, where developer and publisher Urban Games lists the title for an Early Access release on Sep 29, 2026. Console release dates for PlayStation 5 and Xbox Series X|S are Not announced as of 2026-09-28. A Mac version is also Not announced as of 2026-09-28; check the official Steam store page for updates.\n\nTransport Fever 3 Platforms on Steam\n\nSteam PC is the only confirmed platform for Transport Fever 3. The store page sits at https://store.steampowered.com/app/3493540 and identifies Urban Games as both developer and publisher. Steam tags also list Online Multiplayer and Co-op as features, and Steam Workshop plus a Curated Mods program appear as signals.\n\nEarly Access Status at Launch\n\nThe Steam listing marks Transport Fever 3 as an Early Access title at launch. Early Access on Steam means the game ships in a playable state while Urban Games continues to ship updates through the Early Access window; the Steam page itself describes the Early Access window in more detail.\n\nSteam Page Languages\n\nThe Steam store page lists supported interface languages that include English plus several European languages. The page confirms English as the leading interface language, and the language list on the Steam page itself is the live reference for additional languages.\n\nConsole Release Status\n\nPlayStation 5 and Xbox Series X|S\n\nA PlayStation 5 or Xbox Series X|S release date for Transport Fever 3 is Not announced as of 2026-09-28; check the official Steam store page for updates. Console SKUs are not visible on the Steam store page, which only lists Windows PC at this time. Watch the Steam News feed on the store page for any post-launch console expansion.\n\nMac Release\n\nA native Mac version of Transport Fever 3 is Not announced as of 2026-09-28; check the official Steam store page for updates. Steam for macOS would require Urban Games to publish a separate macOS build, which is not currently listed alongside the Windows PC SKU.\n\nHow to Track New Platform Announcements\n\nTreat the Steam store page at https://store.steampowered.com/app/3493540 as the live source for any future platform expansion. The Steam Community Hub discussion threads surface community reactions to platform news, and Urban Games' official social channels will mirror any new platform announcement. The release date status page carries the same release timing once new SKUs appear."
-    },
+          {
+        "id": "platforms-on-steam",
+        "type": "prose",
+        "heading": "Platforms on Steam",
+        "body": "Steam PC is the only confirmed platform for Transport Fever 3. The store page sits at https://store.steampowered.com/app/3493540 and identifies Urban Games as both developer and publisher. Steam tags also list Online Multiplayer and Co-op as features, and Steam Workshop plus a Curated Mods program appear as signals."
+      },
+      {
+        "id": "early-access",
+        "type": "prose",
+        "heading": "Early Access status at launch",
+        "body": "The Steam listing marks Transport Fever 3 as an Early Access title at launch. Early Access on Steam means the game ships in a playable state while Urban Games continues to ship updates through the Early Access window; the Steam page itself describes the Early Access window in more detail."
+      },
+      {
+        "id": "languages",
+        "type": "prose",
+        "heading": "Steam page languages",
+        "body": "The Steam store page lists supported interface languages that include English plus several European languages. The page confirms English as the leading interface language, and the language list on the Steam page itself is the live reference for additional languages.\n\nConsole Release Status"
+      },
+      {
+        "id": "consoles",
+        "type": "prose",
+        "heading": "PlayStation 5 and Xbox Series X|S",
+        "body": "A PlayStation 5 or Xbox Series X|S release date for Transport Fever 3 is Not announced as of 2026-09-28; check the official Steam store page for updates. Console SKUs are not visible on the Steam store page, which only lists Windows PC at this time. Watch the Steam News feed on the store page for any post-launch console expansion."
+      },
+      {
+        "id": "mac",
+        "type": "prose",
+        "heading": "Mac release",
+        "body": "A native Mac version of Transport Fever 3 is Not announced as of 2026-09-28; check the official Steam store page for updates. Steam for macOS would require Urban Games to publish a separate macOS build, which is not currently listed alongside the Windows PC SKU."
+      },
+      {
+        "id": "tracking",
+        "type": "prose",
+        "heading": "How to track new platform announcements",
+        "body": "Treat the Steam store page at https://store.steampowered.com/app/3493540 as the live source for any future platform expansion. The Steam Community Hub discussion threads surface community reactions to platform news, and Urban Games' official social channels will mirror any new platform announcement. The release date status page carries the same release timing once new SKUs appear."
+      },
     {
       "id": "sources",
       "type": "callout",
       "title": "Sources cited",
       "tone": "tip",
-      "body": "Transport Fever 3 on Steam (official/store, checked 2026): 09-28` - confirmed Steam PC platform, AppID 3493540, developer and publisher Urban Games, Early Access flag, Steam tags, supported interface languages"
+      "body": "- Transport Fever 3 on Steam (official/store, checked 2026-09-28 - confirmed Steam PC platform, AppID 3493540, developer and publisher Urban Games, Early Access flag, Steam tags, supported interface languages"
     },
     {
       "id": "internal-links",
@@ -95,7 +125,7 @@ export const platformsPage: PageContent = {
       "type": "callout",
       "title": "Fact boundaries",
       "tone": "caution",
-      "body": "Fact Boundaries\n\n- The Steam store page (AppID 3493540) is the authoritative live source for the current Transport Fever 3 platforms list.\n- Steam PC is the only confirmed platform as of 2026-09-28; the page lists Windows PC only and does not currently show Mac, PlayStation 5, or Xbox Series X|S SKUs.\n- Console release dates for PlayStation 5 and Xbox Series X|S are Not announced as of 2026-09-28; check the official Steam store page for updates.\n- A Mac version of Transport Fever 3 is Not announced as of 2026-09-28; check the official Steam store page for updates.\n- Early Access status is a Steam listing flag and does not by itself define a full-release exit date.\n- Train Fever (2014), Transport Fever (2016), and Transport Fever 2 (2019) are sibling titles and are referenced only to disambiguate Transport Fever 3 platform claims."
+      "body": "- The Steam store page (AppID 3493540) is the authoritative live source for the current Transport Fever 3 platforms list.\n- Steam PC is the only confirmed platform as of 2026-09-28; the page lists Windows PC only and does not currently show Mac, PlayStation 5, or Xbox Series X|S SKUs.\n- Console release dates for PlayStation 5 and Xbox Series X|S are Not announced as of 2026-09-28; check the official Steam store page for updates.\n- A Mac version of Transport Fever 3 is Not announced as of 2026-09-28; check the official Steam store page for updates.\n- Early Access status is a Steam listing flag and does not by itself define a full-release exit date.\n- Train Fever (2014), Transport Fever (2016), and Transport Fever 2 (2019) are sibling titles and are referenced only to disambiguate Transport Fever 3 platform claims."
     }
   ],
   "faqIds": [

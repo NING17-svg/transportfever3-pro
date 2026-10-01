@@ -84,6 +84,52 @@
   background: var(--surface-1);
 }
 
+/*
+ * A prose body is authored as Markdown and rendered into headings, paragraphs,
+ * lists and tables, so the elements the renderer emits need the same spacing the
+ * module grid gives a single <p>, plus indentation for lists and a legible box
+ * for inline `code`.
+ */
+.prose-module ul,
+.prose-module ol,
+.status-callout ul,
+.status-callout ol {
+  margin: 0;
+  padding-left: 1.4em;
+  display: grid;
+  gap: 8px;
+}
+
+.prose-module code,
+.status-callout code {
+  padding: 1px 5px;
+  border: var(--border-width) solid var(--line);
+  border-radius: 4px;
+  background: var(--surface-2);
+  font-size: 0.92em;
+}
+
+.prose-module table,
+.status-callout table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.prose-module th,
+.prose-module td,
+.status-callout th,
+.status-callout td {
+  padding: 8px 10px;
+  border: var(--border-width) solid var(--line);
+  text-align: left;
+}
+
+.prose-module th,
+.status-callout th {
+  background: var(--surface-2);
+  font-weight: 700;
+}
+
 .entity-grid,
 .recipe-grid,
 .comparison-grid,

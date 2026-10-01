@@ -1,3 +1,4 @@
+import { renderMarkdown } from "@/components/content/markdown";
 import type { CalloutModule } from "@/types/modules";
 
 export function StatusCallout({ guideModule }: { guideModule: CalloutModule }) {
@@ -9,7 +10,7 @@ export function StatusCallout({ guideModule }: { guideModule: CalloutModule }) {
       aria-labelledby={`${guideModule.id}-title`}
     >
       <h2 id={`${guideModule.id}-title`}>{guideModule.title}</h2>
-      <p>{guideModule.body}</p>
+      {guideModule.body ? renderMarkdown(guideModule.body) : null}
     </aside>
   );
 }

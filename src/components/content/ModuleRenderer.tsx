@@ -3,6 +3,7 @@ import { ComparisonBlock } from "@/components/content/ComparisonBlock";
 import { DataTableBlock } from "@/components/content/DataTableBlock";
 import { EntityGrid } from "@/components/content/EntityGrid";
 import { MediaGallery } from "@/components/content/MediaGallery";
+import { renderMarkdown } from "@/components/content/markdown";
 import { RecipeList } from "@/components/content/RecipeList";
 import { ScheduleBlock } from "@/components/content/ScheduleBlock";
 import { StatusCallout } from "@/components/content/StatusCallout";
@@ -26,7 +27,7 @@ export function ModuleRenderer({ modules }: { modules: GuideModule[] }) {
                 className="content-module prose-module"
               >
                 <h2>{guideModule.heading}</h2>
-                <p>{guideModule.body}</p>
+                {renderMarkdown(guideModule.body)}
                 {guideModule.links?.length ? (
                   <div className="inline-link-list">
                     {guideModule.links.map((link) => (

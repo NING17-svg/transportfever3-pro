@@ -1,6 +1,7 @@
 import { AdSlot } from "@/components/ads/AdSlot";
 import { FAQBlock } from "@/components/content/FAQBlock";
 import { ModuleRenderer } from "@/components/content/ModuleRenderer";
+import { renderInlineMarkdown } from "@/components/content/markdown";
 import { RelatedLinks } from "@/components/content/RelatedLinks";
 import { RightRail } from "@/components/layout/RightRail";
 import { PageHero } from "@/components/pages/PageHero";
@@ -38,7 +39,7 @@ export function ContentPage({ page }: { page: PageContent }) {
       <AdSlot placement="responsive-banner" />
       <div className="content-layout" data-variant={variant}>
         <div className="article-body">
-          <p className="quick-answer">{page.quickAnswer}</p>
+          <p className="quick-answer">{renderInlineMarkdown(page.quickAnswer)}</p>
           <ModuleRenderer modules={leadingModules} />
           <AdSlot placement="native-banner" />
           {remainingModules.length ? (
